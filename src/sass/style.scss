@@ -1,0 +1,16 @@
+@import 'libs/normalise';
+@import 'libs/fonts';
+
+@import 'main/variables';
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/buttons';
