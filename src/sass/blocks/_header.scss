@@ -49,6 +49,10 @@
         font-weight: 700;
         line-height: 24px;
         text-decoration: none;
+        &:hover {
+            color: $main;
+            text-decoration: underline;
+        }
     }
     &__wrapper {
         margin-top: 9px;

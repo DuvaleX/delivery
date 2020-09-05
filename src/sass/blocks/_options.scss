@@ -1,0 +1,30 @@
+.options {
+    position: relative;
+    padding-top: 51px;
+    min-height: 964px;
+    &__content {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__subtitle {
+        margin-top: 21px;
+        color: $main;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 15px;
+        color: #3a3a3a;;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: justify;
+    }
+    &__item {
+        max-width: 360px;
+    }
+}
+

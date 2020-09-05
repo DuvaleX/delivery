@@ -1,0 +1,82 @@
+.prices {
+    padding: 53px 0 80px 0;
+    &__content {
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        position: relative;
+        width: 265px;
+        min-height: 355px;
+        border: 1px solid #e9e9e9;
+        background-color: #ffffff;
+    }
+    &__title {
+        padding-top: 24px;
+        width: 265px;
+        height: 37px;
+        background-color: $second;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 14px;
+    }
+    &__time {
+        margin-top: 10px;
+        color: #2e2e2e;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__tax {
+        color: $main;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 28px;
+        text-align: center;
+    }
+    &__descr {
+        margin-top: 20px;
+        color: #2e2e2e;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+    }
+    &__form {
+        position: relative;
+        margin-top: 56px;
+    }
+    &__form-title {
+        margin: 0;
+        color: #3a3a3a;
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__circle {
+        position: absolute;
+        left: 50%;
+        top: 45px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 102px;
+        border: 1px solid $main;
+        border-radius: 100%;
+        background-color: #fff;
+        z-index: 2;
+    }
+}

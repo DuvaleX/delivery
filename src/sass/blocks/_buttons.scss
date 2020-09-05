@@ -8,6 +8,11 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+        box-shadow: 1px 2px 4px 4px grey;
+    }
     &_big {
         display: block;
         width: 230px;
@@ -15,5 +20,16 @@
         margin: 0 auto;
         margin-top: 100px;
         font-size: 15px;
+    }
+    &_center {
+        position: absolute;
+        display: block;
+        bottom: 25px;
+        left: 53px;
+    }
+    &_price {
+        position: absolute;
+        width: 180px;
+        bottom: -23px;
     }
 }
