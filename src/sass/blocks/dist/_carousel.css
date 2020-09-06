@@ -1,0 +1,58 @@
+.carousel {
+  margin-top: 31px;
+}
+.carousel__inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.carousel__item {
+  max-width: 600px;
+  margin: 0 auto;
+  transform: scale(0.5);
+  opacity: 0.3;
+}
+.carousel__img {
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.carousel__name {
+  margin-top: 19px;
+  color: #3a3a3a;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.carousel__text {
+  margin-top: 14px;
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+}
+.carousel .slick-prev {
+  position: absolute;
+  left: 40%;
+  top: 30px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.carousel .slick-next {
+  position: absolute;
+  right: 40%;
+  top: 30px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.carousel .slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
