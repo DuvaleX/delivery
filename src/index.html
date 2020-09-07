@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="head">
         <div class="container">
             <div class="header__menu">
                 <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
             <nav>
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#">Преимущества </a></li>
-                    <li class="header__item"><a class="header__link" href="#">Наша работа</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Цены</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Схема работы</a></li>
-                    <li class="header__item"><a class="header__link" href="#"> Отзывы </a></li>
-                    <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+                    <li class="header__item"><a class="header__link" href="#advantages">Преимущества </a></li>
+                    <li class="header__item"><a class="header__link" href="#options">Наша работа</a></li>
+                    <li class="header__item"><a class="header__link" href="#prices">Цены</a></li>
+                    <li class="header__item"><a class="header__link" href="#schema">Схема работы</a></li>
+                    <li class="header__item"><a class="header__link" href="#reviews"> Отзывы </a></li>
+                    <li class="header__item"><a class="header__link" href="#footer">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header__contacts">
@@ -57,7 +57,7 @@
         </div>
     </header>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="title">Преимущества работы с GlobalOpt</h2>
             <div class="advantages__items">
@@ -121,7 +121,7 @@
         </div>
     </section>
 
-    <section class="options">
+    <section class="options" id="options">
         <div class="container">
             <h2 class="title">Наша работа - больше чем просто доставка</h2>
             <div class="devider"></div>
@@ -162,7 +162,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
         <div class="container">
             <h2 class="title">Цены на любой вариант доставки</h2>
             <div class="devider"></div>
@@ -216,13 +216,13 @@
         </div>
     </section>
 
-    <section class="schema">
+    <section class="schema" id="schema">
         <div class="insert insert_bg">
             <div class="container">
                 <div class="insert__circle">
                     <img src="icons/manager.png" alt="icon" class="insert__img">
                 </div>
-                <div class="insert__subtitle">Менеджеры компании</div>
+                <h2 class="insert__subtitle">Менеджеры компании</h2>
                 <div class="insert__descr">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые<br> поставки от завода-изготовителя.</div>
             </div>
         </div>
@@ -270,8 +270,8 @@
         </div>
     </section>
 
-    <section class="reviews">
-            <div class="title">отзывы наших клиентов</div>
+    <section class="reviews" id="reviews">
+            <h2 class="title">отзывы наших клиентов</h2>
             <div class="devider"></div>
             <div class="subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
             <div class="carousel">
@@ -327,7 +327,7 @@
             </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9516.372446967978!2d37.61238454247998!3d55.7486883961691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x796b6bb427f2184b!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINC-0YTQuNGBIDQtNiwg0JzQvtGB0LrQstCwLCAxMTUwMzU!5e0!3m2!1sru!2sru!4v1599464758934!5m2!1sru!2sru" allowfullscreen=""></iframe>
         <div class="footer__wrapper">
             <div class="container">
@@ -353,6 +353,10 @@
             </div>
         </div>
     </footer>
+
+    <div class="pageup">
+        <a href="#head"><img src="icons/up.svg" alt="up"></a>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
