@@ -1,28 +1,11 @@
 $(document).ready(function(){
-    $('.carousel__inner, .center').slick({
+    $('.carousel__inner').slick({
       centerMode: true,
-      centerPadding: '60px',
       slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
+      dots: true,
+      centerPadding: '60px',
+      prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
     });
     
 });

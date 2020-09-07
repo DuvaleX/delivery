@@ -56,3 +56,18 @@
   transform: scale(1);
   opacity: 1;
 }
+.carousel .slick-dots {
+  margin-right: 50%;
+  transform: translateX(50%);
+  list-style: none;
+  float: right;
+}
+.carousel .slick-dots li {
+  float: left;
+  font-size: 0;
+  padding: 0;
+  height: 10px;
+}
+.carousel .slick-dots .slick-active {
+  color: red;
+}
