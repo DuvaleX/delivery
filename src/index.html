@@ -11,23 +11,28 @@
         <div class="container">
             <div class="header__menu">
                 <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
-            <nav>
-                <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#advantages">Преимущества </a></li>
-                    <li class="header__item"><a class="header__link" href="#options">Наша работа</a></li>
-                    <li class="header__item"><a class="header__link" href="#prices">Цены</a></li>
-                    <li class="header__item"><a class="header__link" href="#schema">Схема работы</a></li>
-                    <li class="header__item"><a class="header__link" href="#reviews"> Отзывы </a></li>
-                    <li class="header__item"><a class="header__link" href="#footer">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header__contacts">
-                <div class="header__contact-block">
-                    <div class="header__descr">Есть вопросы?</div>
-                    <a class="header__phone" href="tel:+79264230100">+7 (926) 423 01 00</a>
+                <nav>
+                    <ul class="header__list">
+                        <li class="header__item"><a class="header__link" href="#advantages">Преимущества </a></li>
+                        <li class="header__item"><a class="header__link" href="#options">Наша работа</a></li>
+                        <li class="header__item"><a class="header__link" href="#prices">Цены</a></li>
+                        <li class="header__item"><a class="header__link" href="#schema">Схема работы</a></li>
+                        <li class="header__item"><a class="header__link" href="#reviews"> Отзывы </a></li>
+                        <li class="header__item"><a class="header__link" href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <div class="header__contact-block">
+                        <div class="header__descr">Есть вопросы?</div>
+                        <a class="header__phone" href="tel:+79264230100">+7 (926) 423 01 00</a>
+                    </div>
+                    <button data-modal="consultation" class="button">Перезвоните мне</button>
                 </div>
-                <button class="button">Перезвоните мне</button>
-            </div>
+                <div class="hamburger">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </div>
             </div>
             <div class="header__wrapper">
                 <div class="header__tagline">Global Opt - логистика полного цикла из Китая в Россию</div>
@@ -52,7 +57,7 @@
                         <div class="header__text">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
                     </div>
                 </div>
-                <button class="button button_big">Получить расчет</button>
+                <button data-modal="consultation" class="button button_big">Получить расчет</button>
             </div>
         </div>
     </header>
@@ -341,7 +346,7 @@
                             <div class="footer__descr">Есть вопросы?</div>
                             <a class="footer__phone" href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>
-                        <button class="button">Перезвоните мне</button>
+                        <button data-modal="consultation" class="button">Перезвоните мне</button>
                     </div>
                 </div>
                 <hr>
@@ -358,9 +363,23 @@
         <a href="#head"><img src="icons/up.svg" alt="up"></a>
     </div>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="modal__form">
+                <input type="text" name="name" placeholder="Ваше имя..">
+                <input type="tel" name="phone" placeholder="Ваш номер телефона..">
+                <input type="email" name="email" placeholder="Ваш email..">
+                <button class="button button_modal">Отправить</button>
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
     
 </body>
