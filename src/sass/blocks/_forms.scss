@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1140px;
+    max-width: 1140px;
     height: 166px;
     border: 1px solid #c9c9c9;
     input {
         height: 47px;
-        width: 273px;
+        max-width: 273px;
         border: 1px solid #c9c9c9;
         border-radius: 25px;
         padding-left: 30px;
@@ -22,7 +22,7 @@
     &_review {
         flex-wrap: wrap;
         margin-top: 0;
-        width: 896px;
+        max-width: 896px;
         height: 297px;
         background-color: rgba(255,255,255,0.7);
         input {

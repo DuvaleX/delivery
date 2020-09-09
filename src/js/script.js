@@ -5,9 +5,20 @@ $(document).ready(function(){
       centerPadding: '60px',
       prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true
+          }
+        },
+      ]
     });
 
-    // Scroll
+                    // Scroll
     $(window).scroll(function() {
       if ($(this).scrollTop() > 680) {
         $('.pageup').fadeIn();
@@ -22,7 +33,7 @@ $(document).ready(function(){
       return false;
     });
 
-    // Modal 
+                    // Modal 
 
     $('[data-modal=consultation]').on('click', function() {
       $('.overlay, #consultation').fadeIn('slow');
@@ -31,7 +42,7 @@ $(document).ready(function(){
       $('.overlay, #consultation').fadeOut('slow');
     });
 
-    // exit on Esc
+                // exit on Esc
 
     $(document).on('keydown', function(event) {
       if (event.keyCode == 27) {
@@ -39,12 +50,13 @@ $(document).ready(function(){
       }
     });
 
-    // phone mask
+              // phone mask
 
     $('input[name=phone]').mask("+7 (999) 999-9999");
     
 });
 
+            // Hamburger
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.header__list'),
   menuItem = document.querySelectorAll('.header_item'),
